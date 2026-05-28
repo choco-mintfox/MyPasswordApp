@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+main {
+  width: 540px;
+  margin: 24px auto 0;
+  box-shadow: 0 0 8px #999;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+p {
+  margin: 0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-family: "Courier New";
+  font-size: 24px;
+  text-align: center;
+  padding: 12px 8px;
+  word-break: break-all;
+}
+
+button {
+  all: unset;
+  width: 100%;
+  background-color: #08c;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 16px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: .6;
+}
+
+button:active {
+  opacity: .4;
+}
+
+fieldset {
+  border: 1px dashed #aaa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 画像風の文字数選択レイアウト */
+.length-selector {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.label-title {
+  background-color: #eee; /* 左側の薄いグレー */
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 14px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.options-wrapper {
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+/* テキストボックス（数字入力欄）のスタイル */
+#custom-length-input {
+  width: 50px;
+  height: 32px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 入力欄の上下の矢印（スピンボタン）をスッキリ見せるための調整 */
+#custom-length-input::-webkit-inner-spin-button,
+#custom-length-input::-webkit-outer-spin-button {
+  margin-left: 2px;
+}
+
+.options-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* チェックボックス（数字・記号）を横並びにする用 */
+.checkbox-group {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+}
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+legend {
+  padding: 0 8px;
+}
+
+#password-length {
+  width: 24px;
+  display: inline-block;
+  text-align: center;
+}

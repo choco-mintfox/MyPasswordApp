@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>パスワードジェネレーター</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+      <p id="result"></p>
+
+      <button id="btn">パスワードを生成</button>
+
+      <fieldset>
+        <legend>オプション</legend>
+
+        <div class="length-selector">
+          <div class="label-title">文字数</div>
+          <div class="options-wrapper">
+            <label>
+              <input type="radio" name="length" id="radio-custom" value="custom" checked>
+              <input type="number" id="custom-length-input" min="8" max="32" value="8"> 文字
+            </label>
+            <label>
+              <input type="radio" name="length" value="8"> 8文字
+            </label>
+
+            <label>
+              <input type="radio" name="length" value="16"> 16文字
+            </label>
+            <label>
+              <input type="radio" name="length" value="32"> 32文字
+            </label>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <label>
+            数字
+            <input type="checkbox" id="numbers-checkbox">
+          </label>
+          <label>
+            記号
+            <input type="checkbox" id="symbols-checkbox">
+          </label>
+        </div>
+      </fieldset>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
